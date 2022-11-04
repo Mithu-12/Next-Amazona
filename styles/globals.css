@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -13,6 +16,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.card {
+  @apply mb-2 pb-3 shadow-md block rounded-lg border-gray-200;
+}
+.primary-button {
+  @apply bg-amber-300 py-2 px-4 shadow outline-none rounded active:bg-amber-500 cursor-pointer;
 }
 
 @media (prefers-color-scheme: dark) {
